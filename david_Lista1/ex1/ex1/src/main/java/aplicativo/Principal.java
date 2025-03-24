@@ -25,7 +25,7 @@ public class Principal {
 		
 		em.persist(vendedor1);
 		em.persist(cliente1);
-		
+
 		Query consultaV = em.createQuery("select vendedor from Vendedor vendedor"); //consulta em jpql
 		ArrayList<Vendedor> listaV = (ArrayList<Vendedor>) consultaV.getResultList();
 		
