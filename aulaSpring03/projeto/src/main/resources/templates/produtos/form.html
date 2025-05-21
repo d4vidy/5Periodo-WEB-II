@@ -14,7 +14,7 @@
     <main class="main-content">
 
         <h1>Cadastrar Produtos</h1>
-        <form th:action="@{/produtos/cadastrar}" th:object="${produtos}" method="post">
+        <form th:action="@{/produtos/cadastrar}" th:object="${produto}" method="post">
             <div>
                 <label>Nome: </label>
                 <input type="text" th:field="*{nome}" placeholder="Nome Produto" />
