@@ -6,9 +6,9 @@ POST {{ base_url }}/api/veiculo
 Content-Type: application/json
 
 {
-  "modelo": "Onix",
-  "ano": 2020,
-  "valor": 54468
+  "modelo": "Brasilia",
+  "ano": 1980,
+  "valor": 20000
 }
 
 ### Listar todos os veiculos
