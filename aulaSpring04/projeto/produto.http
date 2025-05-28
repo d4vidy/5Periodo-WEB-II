@@ -1,26 +1,26 @@
 # Definição de variáveis (ambiente “local” do REST Client)
 @base_url = https://fantastic-waffle-qw9rp9x59772xgqw-8080.app.github.dev
 
-### Inserir novo veiculo
-POST {{ base_url }}/api/veiculo
+### Inserir novo produto
+POST {{ base_url }}/api/produtos
 Content-Type: application/json
 
 {
-  "modelo": "Brasilia",
-  "ano": 1980,
-  "valor": 20000
+  "nome": "Notebook",
+  "quantidade": 10,
+  "valor": 3899.99
 }
 
-### Listar todos os veiculos
-GET {{ base_url }}/api/veiculo
+### Listar todos os produtos
+GET {{ base_url }}/api/produtos
 Accept: application/json
 
-### Buscar veiculos por ID
-GET {{ base_url }}/api/veiculo/3
+### Buscar produtos por ID
+GET {{ base_url }}/api/produtos/1
 Accept: application/json
 
-### Atualizar veiculo (PUT)
-PUT {{ base_url }}/api/veiculo/1
+### Atualizar produto (PUT)
+PUT {{ base_url }}/api/produtos/1
 Content-Type: application/json
 
 {
@@ -30,5 +30,5 @@ Content-Type: application/json
 }
 
 ### Remover pessoa (DELETE)
-DELETE {{ base_url }}/api/veiculo/1
+DELETE {{ base_url }}/api/produtos/1
 Accept: */*
